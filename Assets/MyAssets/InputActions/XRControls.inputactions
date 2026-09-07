@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "XRControls",
+    "maps": [
+        {
+            "name": "XRInteractions",
+            "id": "e90ca54b-6c4a-4df8-b443-e07441d157cf",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "46c1d13e-0f74-4dcd-acdc-fbd3bd75082f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlaceAnchor",
+                    "type": "Button",
+                    "id": "d43f3b0e-3dd4-4993-8f9e-d1a756e12872",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0d35f36c-b0b6-425d-92c6-c6e54f4191be",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "961f1464-61bb-4033-b719-a071796ee38f",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
