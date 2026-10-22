@@ -1,7 +1,28 @@
-fileFormatVersion: 2
-guid: be7dc57e01918eb488d0b918840dc821
-TextScriptImporter:
-  externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+modules:
+  macro:
+    - key: voice-narration-block
+      resource: main
+      resolver:
+        function: resolver
+      title: Voice Narration Block
+      description: Generate, preview, and save one narration clip for this block of text.
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    # This path must match whatever "forge create" generated for your Custom UI
+    # module's build output folder - check your project for the exact name if it
+    # doesn't match, e.g. static/main-custom-ui/build
+    path: static/main/build
+app:
+  # forge create fills this in automatically - don't hand-edit it.
+  id: ari:cloud:ecosystem::app/REPLACE_WITH_YOUR_GENERATED_ID
+permissions:
+  scopes:
+    - write:confluence-content
+    - read:confluence-content.all
+  external:
+    fetch:
+      backend:
+        - api.elevenlabs.io
